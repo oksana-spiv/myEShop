@@ -1,0 +1,195 @@
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-regular";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-regular";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-regular";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-bold";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-bold";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-bold";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-black";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-light";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "lato-italic";
+  // адрес шрифта и тип
+  src: url("../fonts/lato-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "roboto";
+  // адрес шрифта и тип
+  src: url("../fonts/roboto-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: "antialiased";
+}
+
+/*Убрать горизонтальный скролл*/
+// html,
+// body {
+//   max-width: 100%;
+//   overflow-x: hidden;
+// }
+
+/*Избавляемся от несоответствий отображения элементов верстки в разных браузерах */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* IE6/7 support */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  width: 100%;
+  margin: 0 auto;
+  // max-width: 1920px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  // font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class],
+li,
+nav[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  // &:hover {
+  //   text-decoration: underline;
+  // }
+}
+
+// Липкий футер
+.wrap {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: auto;
+}
+
+.footer {
+  flex-shrink: 1;
+}
